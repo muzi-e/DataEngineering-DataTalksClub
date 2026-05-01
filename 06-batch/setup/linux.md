@@ -15,6 +15,18 @@ sudo apt update
 sudo apt install default-jdk
 ```
 
+If you are running on a newer JDK and see errors such as `getSubject is not supported` or
+`FileSystem: Cannot load filesystem ... ViewFileSystem`, switch to Java 17 instead of newer Java
+versions like 22 or 25.
+
+For example:
+
+```bash
+sudo apt install openjdk-17-jdk-headless
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
 Check that it works:
 
 ```bash
