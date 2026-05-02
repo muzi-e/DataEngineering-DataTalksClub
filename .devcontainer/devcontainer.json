@@ -1,0 +1,19 @@
+{
+  "name": "Spark Local Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "mtxr.sqltools"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install pyspark pandas findspark"
+}

@@ -56,3 +56,16 @@ warehouse/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# Ignore Spark output directories
+# Spark data outputs
+06-batch/code/fhvhv/
+06-batch/code/fhvhv_output_csv/
+06-batch/code/zones/
+
+# General data files
+*.parquet
+*.csv
+*.csv.gz
+*.crc
+_SUCCESS
